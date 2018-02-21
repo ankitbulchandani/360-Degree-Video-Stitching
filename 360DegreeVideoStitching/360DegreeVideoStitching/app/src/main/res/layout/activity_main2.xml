@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:gravity="center_vertical|center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.watumullbeproject.pankaj.a360degreevideostitching.Main2Activity">
+
+    <com.google.vr.sdk.widgets.video.VrVideoView
+        android:id="@+id/video_view1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_marginTop="50dp"
+        android:scrollbars="none">
+
+    </com.google.vr.sdk.widgets.video.VrVideoView>
+
+    <SeekBar
+        android:id="@+id/seek_bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:background="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/status_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:gravity="center_horizontal"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:text="Loading Video..."
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp" />
+
+</LinearLayout>
